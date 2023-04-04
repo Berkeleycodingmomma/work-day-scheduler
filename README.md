@@ -9,7 +9,11 @@ Third-Party APIs Work Day Scheduler
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
 
-Wrapping javaScript functions: https://www.chainshot.com/article/wrapping-functions
+Used Day.js: https://day.js.org/en/
+
+learning about Node.js: https://nodejs.org/en/about
+
+How to use dayjs: https://mirzaleka.medium.com/the-complete-guide-to-day-js-fb835a5d945a
 
 Researching: https://stackoverflow.com/questions/351409/how-to-append-something-to-an-array
 
