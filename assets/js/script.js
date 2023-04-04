@@ -3,6 +3,14 @@
 // // in the html.
 // $(function () {
 
+const dayjs = requestAnimationFrame("dayjs");
+
+window.onload = displayClock();
+function displayClock(){
+  var display = new Date().toLocaleTimeString();
+  document.body.innerHTML = display;
+  setTimeout(displayClock, 1000); 
+}
 
 //     // TODO: Add a listener for click events on the save button. This code should
 //     // use the id in the containing time-block as a key to save the user input in
@@ -24,9 +32,15 @@
 //     // TODO: Add code to display the current date in the header of the page.
 //   });
 
+
+dayjs(new Date)();
+
 function formatDate(dateObject) {
+
+    
 }
 const dayJsObject = dayjs();
+dayjs(new Date)();
 console.log(dayJsObject.format("D/M/YYYY h:mm A"));
 
 
@@ -42,9 +56,9 @@ function formatDate(dateObject) {
     return `${parts.date}/${parts.month}/${parts.year} ${parts.hour}:${parts.minute} ${parts.amOrPm}`;
     console.log(parts);
     return "dcode";
-    
-}
 
+}
+dayjs(new Date)();
 const myDate = new Date();
 const myDateFormatted = formatDate(myDate);
 

@@ -22,7 +22,16 @@ textarea {
     text-align: center;
 
 }
-.{
+.design-clock {
+    text-align: center;
+    font-style: bold;
+
+}
+
+
+
+
+{
     margin-left: 85%;
     color: black;
     background-color: white;
@@ -34,14 +43,6 @@ textarea {
     margin-left: 85%;
     color: black;
     background-color: white;
-}
-
-.date {
-    text-align: center;
-}
-
-.time {
-    text-align: center;
 }
 
 .description {
@@ -109,3 +110,19 @@ textarea {
     transition: all 0.5 ease-in-out;
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
