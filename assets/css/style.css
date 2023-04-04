@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    align-items: center;
+    text-align: center;
 }
 
 
@@ -23,22 +23,39 @@ textarea {
 
 }
 
+.btn {
+    margin-left: 85%;
+    color: black;
+    background-color: white;
+}
+
+.date {
+    text-align: center;
+}
+
+.time {
+    text-align: center;
+}
+
 .description {
     white-space: pre-wrap;
 }
 
 .time-block {
     border-radius: 15px;
+    text-align: center;
+
 }
 
 .row {
     border-top: 1px solid white;
+    align-items: center;
 }
 
 .hour {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed #000000;
+    border-top: 1px solid #000000;
     font-family: serif;
 }
 
@@ -60,8 +77,10 @@ textarea {
     font-family: serif;
 }
 
+
+
 .saveBtn {
-    border-left: 1px solid black;
+    border-left: 3px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: rgb(202, 125, 25);
@@ -70,5 +89,9 @@ textarea {
 
 .saveBtn i:hover {
     font-size: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5 ease-in-out;
+    color: black;
 }
+
+
+
