@@ -13,10 +13,10 @@ body {
 
 textarea {
     background: transparent;
-    border: none;
+    border-style: calc();
     resize: none;
     color: #000000;
-    border-left: 1px solid black;
+    border-radius: 40px solid black;
     padding: 10px;
     font-family: serif;
     text-align: center;
@@ -44,36 +44,46 @@ textarea {
 .time-block {
     border-radius: 15px;
     text-align: center;
-
+    
+    
 }
 
 .row {
-    border-top: 1px solid white;
+    display: flex;
+    flex-wrap: space-between;
+    border-top: 1px transparent;
     align-items: center;
+    padding-top: 20px;
+    border-color: #000000;
+   
+   
 }
 
 .hour {
-    background-color: #ffffff;
+    background-color: rgb(202, 125, 25);
     color: #000000;
-    border-top: 1px solid #000000;
+    border-style: 1px solid #000000;
+    border-radius: 5px;
+    border-width: 0ch;
+   
     font-family: serif;
 }
 
 .past {
     background-color: #d3d3d3;
-    color: white;
+    color: black;
     font-family: serif;
 }
 
 .present {
     background-color: #8f241e;
-    color: white;
+    color: black;
     font-family: serif;
 }
 
 .future {
     background-color: #6f4f00;
-    color: white;
+    color: black;
     font-family: serif;
 }
 
@@ -92,6 +102,3 @@ textarea {
     transition: all 0.5 ease-in-out;
     color: black;
 }
-
-
-
