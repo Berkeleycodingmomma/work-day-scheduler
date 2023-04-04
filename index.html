@@ -21,7 +21,8 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+   
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Work Day Scheduler</title>
   </head>
 
@@ -75,12 +76,27 @@
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
     crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
+   
     <!-- checked the console to see correct local date and time -->
     <script>
       let d;
       d = new Date();
+      
       console.log(d.toString());
+      console.log(d.getFullYear());
+      console.log(d.getMonth());
+      console.log(d.getDate());
+      console.log(d.getMinutes());
+      console.log(d.getSeconds());
+      console.log(d.getTime());
+      console.log(d.getTimezoneOffset());
+      console.log(d.getDate());
+      console.log(d.toISOString());
+      console.log(d.toLocaleString("en-US"));
+      console.log(JSON.stringify({
+        myDate: d
+      }));
     </script>
   </body>
 </html>
