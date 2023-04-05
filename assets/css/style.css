@@ -4,7 +4,11 @@ body {
     font-size: 16px;
     align-items: center;
     line-height: 1;
-}
+    width: 100vw;
+    height: 100vh;
+  }
+
+
 
 .header {
     text-align: center;
@@ -73,7 +77,6 @@ textarea {
     border-style: 1px solid #000000;
     border-radius: 5px;
     border-width: 0ch;
-   
     font-family: serif;
 }
 
@@ -95,34 +98,63 @@ textarea {
     font-family: serif;
 }
 
-
-
 .saveBtn {
-    border-left: 3px solid black;
+    border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: rgb(202, 125, 25);
     color: white;
-}
-
-.saveBtn i:hover {
+  }
+  
+  .saveBtn i:hover {
     font-size: 20px;
-    transition: all 0.5 ease-in-out;
-    color: black;
-}
+    transition: all .3s ease-in-out;
+  }
+  
 
-@media screen and (max-width: 768px) {
-    header, main {
-      flex-direction: column;
+
+  .time-div{
+    width: 100px;
+    height : 100px;
+    float:left;
+    margin-right: 10px;
+    text-align:center;
+  }
+  #time-div-data-set{
+    float:left;
+  }
+  .present{
+    background-color: red;
+  }
+  .future{
+    background-color: blue;
+  }
+  .past{
+    background-color: yellow;
+  }
+
+
+
+  /* added @media to adjust to any screen 768px and below */
+  @media screen and (max-width: 768px), screen and (max-width: 575px) {
+    .row {
+      height: auto;
+      margin-top: 20px;
     }
   
-    section {
-      padding-right: 0;
+    .hour {
+      padding-right: 17%;
     }
   
-    aside {
-      width: 100%;
-      text-align: center;
+    .saveBtn {
+      border: 0;
+      border-radius: 0.25rem;
+      height: 50px;
+    }
+  
+    textarea {
+      min-height: 85px;
+      border: 0;
     }
   }
   
