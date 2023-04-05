@@ -1,11 +1,26 @@
+
+    /* border: 5px solid black; */
+border {
+    border-width: 40px;
+    border-style: solid;
+    border-color: black;
+  
+    padding: 2px 5px;
+    text-decoration: none;
+  }
+  
+
+
 body {
     background-image: url(../images/landscape_mountains_sun_140434_1920x1080.jpeg);
+    background-position: 0%;
     font-family: fantasy;
     font-size: 16px;
     align-items: center;
-    line-height: 1;
-    width: 100vw;
-    height: 100vh;
+    line-height: 0;
+    border: 50px solid black;
+    padding: 20px 45px;
+    
   }
 
 
@@ -15,12 +30,12 @@ body {
 }
 
 /* made some adjustments to styling */
-textarea {
+.textarea {
     background: transparent;
     border-style: calc();
     resize: none;
     color: #000000;
-    border-radius: 40px solid black;
+    border-radius: px solid black;
     padding: 10px;
     font-family: serif;
     text-align: left;
@@ -33,7 +48,7 @@ textarea {
 }
 
 
-
+/* adjusted the placement of "clear" button */
 .btn {
     margin-left: 85%;
     color: black;
@@ -47,7 +62,8 @@ textarea {
 
 .time-block {
     border-radius: 15px;
-    text-align: center;
+    text-align: middle;
+    align-content: center;
     
     
 }
@@ -55,9 +71,10 @@ textarea {
 .row {
     display: flex;
     flex-wrap: space-between;
-    border-top: 1px transparent;
+    border: 5px;
     padding-top: 20px;
     border-color: #000000;
+    
     
    
    
@@ -70,6 +87,7 @@ textarea {
     border-radius: 5px;
     border-width: 0ch;
     font-family: serif;
+    text-align: center;
 }
 
 .past {
@@ -91,16 +109,18 @@ textarea {
 }
 
 .saveBtn {
-    border-left: 1px solid black;
+    border: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: rgb(202, 125, 25);
     color: white;
+    
   }
   
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+    
   }
   
 
