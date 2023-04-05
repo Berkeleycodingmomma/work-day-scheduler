@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-
+/* made some adjustments to styling */
 textarea {
     background: transparent;
     border-style: calc();
@@ -23,7 +23,7 @@ textarea {
     border-radius: 40px solid black;
     padding: 10px;
     font-family: serif;
-    text-align: center;
+    text-align: left;
 
 }
 .design-clock {
@@ -34,15 +34,6 @@ textarea {
 
 
 
-
-{
-    margin-left: 85%;
-    color: black;
-    background-color: white;
-    border-color: purple;
-}
-
-
 .btn {
     margin-left: 85%;
     color: black;
@@ -51,6 +42,7 @@ textarea {
 
 .description {
     white-space: pre-wrap;
+    
 }
 
 .time-block {
@@ -64,9 +56,9 @@ textarea {
     display: flex;
     flex-wrap: space-between;
     border-top: 1px transparent;
-    align-items: center;
     padding-top: 20px;
     border-color: #000000;
+    
    
    
 }
@@ -122,15 +114,6 @@ textarea {
   }
   #time-div-data-set{
     float:left;
-  }
-  .present{
-    background-color: red;
-  }
-  .future{
-    background-color: blue;
-  }
-  .past{
-    background-color: yellow;
   }
 
 
