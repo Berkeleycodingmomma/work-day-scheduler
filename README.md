@@ -41,13 +41,13 @@ I have Created a simple calendar application that allows a user to save events f
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
  ```sh
-  <div id="hour-9" class="row time-block mb-2" data-hour="9">
-      <div class="col-2 col-md-1 hour text-center py-3"> <span>9AM</span></div>
-      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-        <i class="fas fa-save" aria-hidden="true"></i>
-      </button>
-    </div>
+ <div id="hour-9" class="row time-block mb-4" data-hour="9">
+        <div class="col-2 col-md-1 hour text-center py-3"> <span>9AM</span></div>
+        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>
  ```
 
 **(ABOVE)- 
