@@ -108,7 +108,8 @@ var elements = $(".time-block");
 
 * [LinkedIn](https://www.linkedin.com/in/amanda-gray-831a65254/)
 
-* [Deployed Application link](
+* [Deployed-link](https://berkeleycodingmomma.github.io/work-day-scheduler/)
+
 ```
 
 ## Credits
