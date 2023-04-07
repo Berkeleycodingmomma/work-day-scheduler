@@ -1,163 +1,136 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-image: url(../images/landscape_mountains_sun_140434_1920x1080.jpeg);
+  background-size: cover;
+  font-family: fantasy;
+}
 
-    /* border: 5px solid black; */
-    border {
-      border-width: 40px;
-      border-style: solid;
-      border-color: black;
-    
-      padding: 2px 5px;
-      text-decoration: none;
-    }
-    
-  
-  
-  body {
-      background-image: url(../images/landscape_mountains_sun_140434_1920x1080.jpeg);
-      background-position: 0%;
-      font-family: fantasy;
-      font-size: 16px;
-      align-items: center;
-      line-height: 0;
-      border: 50px solid black;
-      padding: 20px 45px;
-      
-    }
-  
-  
-  
-  .header {
-      text-align: center;
-  }
-  
-  /* made some adjustments to styling */
-  .textarea {
-      background: transparent;
-      border-style: calc();
-      resize: none;
-      color: #000000;
-      border-radius: px solid black;
-      padding: 10px;
-      font-family: serif;
-      text-align: left;
-  
-  }
-  .design-clock {
-      text-align: center;
-      font-style: bold;
-  
-  }
-  
-  
-  /* adjusted the placement of "clear" button */
-  .btn {
-      margin-left: 85%;
-      color: black;
-      background-color: white;
-  }
-  
-  .description {
-      white-space: pre-wrap;
-      
-  }
-  
-  .time-block {
-      border-radius: 15px;
-      text-align: middle;
-      align-content: center;
-      
-      
-  }
-  
+
+
+.header {
+  text-align: center;
+}
+
+/* made some adjustments to styling */
+.textarea {
+  background: transparent;
+  border-style: calc();
+  resize: none;
+  color: #000000;
+  border-radius: px solid black;
+  padding: 10px;
+  font-family: serif;
+  text-align: left;
+
+}
+
+.description {
+  white-space: pre-wrap;
+
+}
+
+/* cleaning up and organizing my CSS, removing test trials */
+
+.time-block {
+  border-radius: 15px;
+  text-align: middle;
+  align-content: center;
+
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: space-between;
+  border: 5px;
+  padding-top: 20px;
+  border-color: #000000;
+
+
+
+
+}
+
+.hour {
+  background-color: rgb(202, 125, 25);
+  color: #000000;
+  border-style: 1px solid #000000;
+  border-radius: 5px;
+  border-width: 0ch;
+  font-family: serif;
+  text-align: center;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: black;
+  font-family: serif;
+}
+
+.present {
+  background-color: #8f241e;
+  color: black;
+  font-family: serif;
+}
+
+.future {
+  background-color: #6f4f00;
+  color: black;
+  font-family: serif;
+}
+
+.saveBtn {
+  border: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgb(202, 125, 25);
+  color: white;
+
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+
+}
+
+
+
+.time-div {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#time-div-data-set {
+  float: left;
+}
+
+
+
+/* added @media to adjust to any screen 768px and below */
+@media screen and (max-width: 768px),
+screen and (max-width: 575px) {
   .row {
-      display: flex;
-      flex-wrap: space-between;
-      border: 5px;
-      padding-top: 20px;
-      border-color: #000000;
-      
-      
-     
-     
+    height: auto;
+    margin-top: 20px;
   }
-  
+
   .hour {
-      background-color: rgb(202, 125, 25);
-      color: #000000;
-      border-style: 1px solid #000000;
-      border-radius: 5px;
-      border-width: 0ch;
-      font-family: serif;
-      text-align: center;
+    padding-right: 17%;
   }
-  
-  .past {
-      background-color: #d3d3d3;
-      color: black;
-      font-family: serif;
-  }
-  
-  .present {
-      background-color: #8f241e;
-      color: black;
-      font-family: serif;
-  }
-  
-  .future {
-      background-color: #6f4f00;
-      color: black;
-      font-family: serif;
-  }
-  
+
   .saveBtn {
-      border: 1px solid black;
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-      background-color: rgb(202, 125, 25);
-      color: white;
-      
-    }
-    
-    .saveBtn i:hover {
-      font-size: 20px;
-      transition: all .3s ease-in-out;
-      
-    }
-    
-  
-  
-    .time-div{
-      width: 100px;
-      height : 100px;
-      float:left;
-      margin-right: 10px;
-      text-align:center;
-    }
-    #time-div-data-set{
-      float:left;
-    }
-  
-  
-  
-    /* added @media to adjust to any screen 768px and below */
-    @media screen and (max-width: 768px), screen and (max-width: 575px) {
-      .row {
-        height: auto;
-        margin-top: 20px;
-      }
-    
-      .hour {
-        padding-right: 17%;
-      }
-    
-      .saveBtn {
-        border: 0;
-        border-radius: 0.25rem;
-        height: 50px;
-      }
-    
-      textarea {
-        min-height: 85px;
-        border: 0;
-      }
-    }
-    
+    border: 0;
+    border-radius: 0.25rem;
+    height: 50px;
+  }
+
+  textarea {
+    min-height: 85px;
+    border: 0;
+  }
+}
