@@ -18,15 +18,12 @@ body {
   border-style: calc();
   resize: none;
   color: #000000;
-  border-radius: px solid black;
   padding: 10px;
   font-family: serif;
   text-align: left;
-    border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
 }
 
-}
 
 .description {
   white-space: pre-wrap;
@@ -36,7 +33,7 @@ body {
 /* cleaning up and organizing my CSS, removing test trials */
 
 .time-block {
-  border-radius: 1px;
+  border-radius: 15px;
   text-align: middle;
   align-content: center;
   border-top-right-radius: 15px;
@@ -47,10 +44,8 @@ body {
 .row {
   display: flex;
   flex-wrap: space-between;
-  border: 5px;
-  border-color: #000000;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
+  
 }
 
 .hour {
