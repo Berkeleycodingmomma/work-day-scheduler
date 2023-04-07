@@ -22,6 +22,9 @@ body {
   padding: 10px;
   font-family: serif;
   text-align: left;
+    border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
 }
 
@@ -33,19 +36,21 @@ body {
 /* cleaning up and organizing my CSS, removing test trials */
 
 .time-block {
-  border-radius: 15px;
+  border-radius: 1px;
   text-align: middle;
   align-content: center;
-
-
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
+
 
 .row {
   display: flex;
   flex-wrap: space-between;
   border: 5px;
-  padding-top: 20px;
   border-color: #000000;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .hour {
@@ -84,7 +89,7 @@ body {
 }
 
 
-/*made adjustmentson my style of my buttons */
+/*made adjustents on my style of my buttons */
 
 
 
