@@ -41,66 +41,65 @@ I have Created a simple calendar application that allows a user to save events f
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 
  ```sh
- window.onload = () => {
-    let scoresFromStorage = JSON.parse(localStorage.getItem("scores"))
-    if (scoresFromStorage) {
-        scores = scoresFromStorage
-    } else {
-        scores = []
-    }
-```
+  <div id="hour-9" class="row time-block mb-2" data-hour="9">
+      <div class="col-2 col-md-1 hour text-center py-3"> <span>9AM</span></div>
+      <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+      <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+        <i class="fas fa-save" aria-hidden="true"></i>
+      </button>
+    </div>
+ ```
 
-**(ABOVE)- I learned that the JSON.parse method converts a JSON string into a javaScript object (or an array), but there’s room to transform that data at the same time. It allows a server to efficiently store data that can then be easily converted into the user interface by converting it back to JavaScript.
+**(ABOVE)- 
 
-
-
---------------------------------------------------------------------------------------------------------------------------------------------------------
-```sh
-     const startTimer = () => {
-    countdown = setInterval(() => {
-        timerCount--;
-        timer.innerHTML = `Timer: ${timerCount}s`;
-        if (timerCount == 0) {
-            clearInterval(countdown);
-            quizContainer.classList.add("hide")
-            scoreContainer.classList.remove("hide")
-            displayScore()
-        }
-    }, 1000);
-```
-
-**(ABOVE)- I figured out that using the innerHTML property, it can set or return the HTML content (inner HTML) of an element.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 ```sh
-function displayHighScores() {
-    let storedScores = JSON.parse(localStorage.getItem("scores"))
-    storedScores.sort((a, b) => parseFloat(b.score) - parseFloat(a.score));
-    for (let i = 0; i < storedScores.length; i++) {
-        let scoresCard = document.createElement("div");
-        scoresCard.classList.add("scores-card");
-        scoresCard.innerHTML += `
-            <div>
-                <span>${storedScores[i].name + ":" + " "}</span>
-                <span>${storedScores[i].score}</span>
-            </div>
-        `;
-        scoresListContainer.appendChild(scoresCard);
-    }
-}
+  $(function () {
+
+  $(document).ready(function () {
+    var saveBtn = document.querySelectorAll(".saveBtn");
+
+    saveBtn.forEach(function (node) {
+
+      node.addEventListener("click", function () {
+
+        var description = $(this).siblings(".description").val();
+
+        var time = $(this).parent().attr("id");
+
+        localStorage.setItem(time, description);
+
+      })
+    });
 ```
-**(ABOVE)- Here I figured out that the parseFloat() method parses its first argument to a string and returns the first number. I also learned the syntax for adding code inside a string
+
+**(ABOVE)- 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+```sh
+var elements = $(".time-block");
+    var d = new Date();
+    var h = d.getHours();
+    var dateNum = d.getUTCDate();
+```
+**(ABOVE)- 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ```sh
-   {
-        "id": 4,
-        "question": "== and != are expamples of?",
-        "answers": ["An If Statement", "Bracket Notation", "For Loop", "A Conditional", "An Array Iterate"],
-        "right_answer": "A Conditional"
-    },
+ let date = document.getElementById('currentDay')
+
+    if ([1, 21, 31].includes(dateNum)) {
+      date.innerHTML = dayjs().format('dddd MMMM D') + "st"
+    } else if ([2, 22].includes(dateNum)) {
+      date.innerHTML = dayjs().format('dddd MMMM D') + "nd"
+    } else if ([3, 23].includes(dateNum)) {
+      date.innerHTML = dayjs().format('dddd MMMM D') + "rd"
+    } else {
+      date.innerHTML = dayjs().format('dddd MMMM D') + "th"
+    }
 ```
-**(ABOVE)- This is an example of an object where I have a question to be asked. Below that I have an array of four possible answers. If the user chooses "A conditional", that will be recognozed as the right answer. 
+**(ABOVE)- 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Author Info
