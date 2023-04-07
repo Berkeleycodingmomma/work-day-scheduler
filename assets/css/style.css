@@ -46,68 +46,45 @@ body {
   border: 5px;
   padding-top: 20px;
   border-color: #000000;
-
-
-
-
 }
 
 .hour {
-  background-color: rgb(202, 125, 25);
-  color: #000000;
-  border-style: 1px solid #000000;
-  border-radius: 5px;
-  border-width: 0ch;
-  font-family: serif;
-  text-align: center;
+  background-color: #ca7d19;
+  color: white;
+  border-top: 1px solid white;
 }
 
 .past {
   background-color: #d3d3d3;
-  color: black;
-  font-family: serif;
+  color: white;
 }
 
 .present {
-  background-color: #8f241e;
-  color: black;
-  font-family: serif;
+  background-color: #ff6961;
+  color: white;
 }
 
 .future {
-  background-color: #6f4f00;
-  color: black;
-  font-family: serif;
+  background-color: #77dd77;
+  color: white;
 }
 
+
 .saveBtn {
-  border: 1px solid black;
+  border-left: 1px solid white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: rgb(202, 125, 25);
+  background-color: #ca7d19;
   color: white;
-
 }
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all .3s ease-in-out;
-
+  transition: all 0.3s ease-in-out;
 }
 
 
-
-.time-div {
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-right: 10px;
-  text-align: center;
-}
-
-#time-div-data-set {
-  float: left;
-}
+/*made adjustmentson my style of my buttons */
 
 
 
