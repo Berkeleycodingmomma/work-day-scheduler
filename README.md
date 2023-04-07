@@ -23,6 +23,10 @@ Local storage in javaScript: https://www.makeuseof.com/localstorage-javascript/
 
 Google free back-ground image search: https://lh3.googleusercontent.com/AxNH1OPwLn8uEU-J6-EgbDtdlHzo71vALcVR3Jv5wOrYnZBJrJUEuuK8kxBqK7mWKTG1ooWlAQ7fQWIN-SSJtX82vEtCfhJeMwRMmw7BwQ
 
+jQuery info: https://api.jquery.com/wrapall/
+
+Container sizing: https://getbootstrap.com/docs/5.0/layout/containers/
+
 
 
 
